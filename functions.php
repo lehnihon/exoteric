@@ -1150,12 +1150,12 @@ function cs_woocommerce_remove_default_tags( $tabs ) {
 	// Remove description tab.
 	/*if ( isset( $tabs['description'] ) ) {
 		unset( $tabs['description'] );
-	}
+	}*/
 
 	// Remove additional information tab.
 	if ( isset( $tabs['additional_information'] ) ) {
 		unset( $tabs['additional_information'] );
-	}*/
+	}
 
 	// Remove reviews tab.
 	if ( isset( $tabs['reviews'] ) ) {
@@ -1166,3 +1166,12 @@ function cs_woocommerce_remove_default_tags( $tabs ) {
 }
 
 add_filter( 'woocommerce_product_tabs', 'cs_woocommerce_remove_default_tags' );
+
+
+function woocommerce_remove_related_products(){
+    remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_show_product_sale_flash', 10);
+    remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20);
+
+}
+add_action('woocommerce_after_single_product_summary', 'woocommerce_remove_related_products');
+

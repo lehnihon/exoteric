@@ -2213,6 +2213,16 @@ h1.page-title {
 	line-height: 1.25;
 }
 
+.woocommerce #primary div.images{
+	width: 100%;
+	float:none;
+}
+
+.woocommerce #primary .entry-summary{
+	width: 100%;
+	float:none;
+}
+
 .woocommerce .woocommerce-info:before,
 .woocommerce-page .woocommerce-info:before,
 .woocommerce .woocommerce-message:before,
