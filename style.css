@@ -978,6 +978,12 @@ select {
 
 }
 
+.sidebar-background{
+	background-color: #fafafa;
+	border: 1px solid #eeeeee;
+	padding: 25px;
+}
+
 .home-products .product{
 	border:1px solid #C0C0C0;
 }
@@ -1031,6 +1037,20 @@ select {
 .entry-header {
 	margin-bottom: 16px;
 	margin-bottom: 1rem;
+}
+
+.entry-header .entry-title{
+	color: #d60158;
+	font-size: 26px;
+	margin-top: 16px;
+	margin-top: 1rem;
+}
+
+.sidebar-title{
+	color: #404040;	
+	border-bottom: 2px solid #d60158;
+	padding: 5px;
+	margin-top: 0px;
 }
 
 .entry-header .entry-title a {

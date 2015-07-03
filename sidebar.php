@@ -6,29 +6,23 @@
  * @since Quark 1.0
  */
 ?>
-	<div class="col grid_4_of_12">
+	<div class="col grid_4_of_12 sidebar-background">
 
-		<div id="secondary" class="widget-area" role="complementary">
+		<div role="complementary">
+			<h4 class="sidebar-title">Terapeutas</h4>
 			<?php
-			do_action( 'before_sidebar' );
+			$args = array( 'posts_per_page' => 6, 'offset'=> 0, 'category_name' => 'terapeutas' );
 
-			if ( is_active_sidebar( 'sidebar-main' ) ) {
-				dynamic_sidebar( 'sidebar-main' );
-			}
-
-			if ( ( is_home() || is_archive() ) && is_active_sidebar( 'sidebar-blog' ) ) {
-				dynamic_sidebar( 'sidebar-blog' );
-			}
-
-			if ( is_single() && is_active_sidebar( 'sidebar-single' ) ) {
-				dynamic_sidebar( 'sidebar-single' );
-			}
-
-			if ( is_page() && is_active_sidebar( 'sidebar-page' ) ) {
-				dynamic_sidebar( 'sidebar-page' );
-			}
-			?>
-
+			$myposts = get_posts( $args );
+			$i = 0;
+			foreach ( $myposts as $post ) : setup_postdata( $post );
+			?>				
+				<div class="row">
+					<a href="<?php the_permalink(); ?>"><?php the_title();?></a>
+				</div>
+			<?php 
+			endforeach; 
+			wp_reset_postdata();?>
 		</div> <!-- /#secondary.widget-area -->
 
 	</div> <!-- /.col.grid_4_of_12 -->

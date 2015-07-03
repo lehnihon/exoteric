@@ -8,8 +8,8 @@
 
 get_header(); ?>
 
-	<div id="primary" class="site-content row" role="main">
-
+	<div id="primary" class="site-content" role="main">
+		<div class="row">
 			<div class="col grid_8_of_12">
 
 				<?php while ( have_posts() ) : the_post(); ?>
@@ -29,7 +29,7 @@ get_header(); ?>
 
 			</div> <!-- /.col.grid_8_of_12 -->
 			<?php get_sidebar(); ?>
-
+		</div>
 	</div> <!-- /#primary.site-content.row -->
-
+	<?php get_template_part( 'newsletter' ); ?>
 <?php get_footer(); ?>
