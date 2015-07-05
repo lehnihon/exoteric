@@ -22,10 +22,6 @@ if ( empty( $woocommerce_loop['loop'] ) )
 // Ensure visibility
 if ( ! $product || ! $product->is_visible() )
 	return;
-
-// Increase loop count
-$woocommerce_loop['loop']++;
-
 ?>
 <?php
 if($woocommerce_loop['loop'] % 3 == 0):
@@ -44,6 +40,8 @@ if($woocommerce_loop['loop'] % 3 == 0):
         </a>
     </div>
 <?php 
+// Increase loop count
+$woocommerce_loop['loop']++;
 if($woocommerce_loop['loop'] % 3 == 0): 
 ?>
 	</div>

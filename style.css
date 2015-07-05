@@ -978,7 +978,7 @@ select {
 
 }
 
-.sidebar-background{
+#primary .sidebar-background{
 	background-color: #fafafa;
 	border: 1px solid #eeeeee;
 	padding: 25px;
@@ -1016,6 +1016,39 @@ select {
 
 }
 
+#newsletter-background .newsletter-nome-wrap{
+	margin: 0;
+}
+
+#newsletter-background .newsletter-nome{
+	padding: 15px 5px;
+}
+
+
+#newsletter-background .newsletter-email-wrap{
+	margin: 0;
+}
+
+#newsletter-background .newsletter-email{
+	padding: 15px 5px;
+}
+
+#newsletter-background .newsletter-enviar-wrap{
+	margin: 0;
+}
+
+#newsletter-background .newsletter-enviar{
+	padding: 15px;
+	background-image: none;
+	background-color: #7d1a1e;
+	color:white;
+}
+
+#newsletter-background .newsletter-enviar:hover{
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
 .newsletter{
 	background-color: #f5f5f5;
 	margin: 0 auto;
@@ -1039,14 +1072,14 @@ select {
 	margin-bottom: 1rem;
 }
 
-.entry-header .entry-title{
+#primary .entry-header .entry-title,#primary .entry-summary .entry-title,#primary .entry-title{
 	color: #d60158;
 	font-size: 26px;
 	margin-top: 16px;
 	margin-top: 1rem;
 }
 
-.sidebar-title{
+#primary .sidebar-title{
 	color: #404040;	
 	border-bottom: 2px solid #d60158;
 	padding: 5px;
@@ -2233,8 +2266,36 @@ h1.page-title {
 	line-height: 1.25;
 }
 
+.woocommerce #primary .quantity{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	float:none;
+}
+
+.woocommerce #primary .button{
+	margin-top: 10px;
+	margin-right: 10px;
+	float:left;
+	background-color: transparent;
+	background-image: url("images/botao_comprar.jpg");
+	background-repeat: no-repeat;
+	width: 127px;
+	height: 42px;
+	border: 0;
+}
+
+.woocommerce #primary .entre-contato{
+	margin-top: 10px;
+	background-image: url("images/botao_contato.jpg");
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 167px;
+	height: 42px;
+
+}
+
 .woocommerce #primary div.images{
-	width: 100%;
+	margin: 0;
 	float:none;
 }
 
@@ -2247,7 +2308,7 @@ h1.page-title {
 .woocommerce-page .woocommerce-info:before,
 .woocommerce .woocommerce-message:before,
 .woocommerce-page .woocommerce-message:before {
-	color: #2997ab;
+	color: #505050;
 }
 
 .woocommerce .woocommerce-info,
@@ -2269,7 +2330,7 @@ h1.page-title {
 .woocommerce-page ul.products li.product .price,
 .woocommerce ul.products li.product .price,
 .woocommerce-page ul.products li.product .price {
-	color: #2997ab;
+	color: #505050;
 }
 
 .woocommerce a.button,

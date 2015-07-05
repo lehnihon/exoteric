@@ -31,5 +31,5 @@ get_header(); ?>
 			<?php get_sidebar(); ?>
 		</div>
 	</div> <!-- /#primary.site-content.row -->
-	<?php get_template_part( 'newsletter' ); ?>
+
 <?php get_footer(); ?>

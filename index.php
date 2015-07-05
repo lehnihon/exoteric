@@ -141,12 +141,5 @@ get_header( 'shop' ); ?>
 		</div>
 	</div>
 
-	<?php get_template_part( 'newsletter' ); ?>
 
-	<ul class="redes_sociais_bot">
-		<li class="youtube"><a target="_blank" href="https://www.youtube.com/channel/UCNkHrw4ujO_bUW7nmrPF1TA"></a></li>
-		<li class="instagram"><a target="_blank" href="https://instagram.com/henjioficial"></a></li>
-		<li class="twitter"><a target="_blank" href="https://twitter.com/henjioficial"></a></li>
-		<li class="facebook"><a target="_blank" href="https://www.facebook.com/henjioficial"></a></li>
-	</ul>	
 <?php get_footer(); ?>

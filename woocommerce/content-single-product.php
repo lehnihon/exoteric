@@ -42,10 +42,57 @@ if ( ! defined( 'ABSPATH' ) ) {
 			do_action( 'woocommerce_before_single_product_summary' );
 		?>
 		</div>
-		<div class="col grid_3_of_12">	
-				teste
+		<div class="col grid_3_of_12 ">	
+			<?php
+			global $product, $woocommerce_loop;
+
+			if ( empty( $product ) || ! $product->exists() ) {
+			return;
+			}
+
+			$related = $product->get_related( $posts_per_page );
+
+			if ( sizeof( $related ) == 0 ) return;
+
+			$args = apply_filters( 'woocommerce_related_products_args', array(
+			'post_type'            => 'product',
+			'ignore_sticky_posts'  => 1,
+			'no_found_rows'        => 1,
+			'posts_per_page'       => $posts_per_page,
+			'orderby'              => $orderby,
+			'post__in'             => $related,
+			'post__not_in'         => array( $product->id )
+			) );
+
+			$products = new WP_Query( $args );
+
+			$woocommerce_loop['columns'] = $columns;
+
+			if ( $products->have_posts() ) : ?>
+
+			<div class="related products sidebar-background">
+
+				<h4 class="sidebar-title"><?php _e( 'Produtos relacionados', 'woocommerce' ); ?></h4>
+
+				<?php woocommerce_product_loop_start(); ?>
+
+					<?php while ( $products->have_posts() ) : $products->the_post(); ?>
+						<div class="row">
+					        <a href="<?php echo get_permalink( $loop->post->ID ) ?>" title="<?php echo esc_attr($loop->post->post_title ? $loop->post->post_title : $loop->post->ID); ?>" class="saiba-mais">
+					        	<?php the_title(); ?>
+					        </a>
+				    	</div>
+					<?php endwhile; // end of the loop. ?>
+
+				<?php woocommerce_product_loop_end(); ?>
+
+			</div>
+
+			<?php endif;
+			wp_reset_postdata();?>
 		</div>	
 	</div>
+
 	<div class="summary entry-summary row">
 
 		<?php
@@ -79,5 +126,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<meta itemprop="url" content="<?php the_permalink(); ?>" />
 
 </div><!-- #product-<?php the_ID(); ?> -->
-
 <?php do_action( 'woocommerce_after_single_product' ); ?>
+
+
