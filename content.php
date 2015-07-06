@@ -16,7 +16,7 @@
 		<header class="entry-header">
 			<?php if ( has_post_thumbnail() && !is_search() ) { ?>
 				<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( esc_html__( 'Permalink to %s', 'quark' ), the_title_attribute( 'echo=0' ) ) ); ?>">
-					<?php the_post_thumbnail( 'post_feature_full_width' ); ?>
+					<?php echo get_the_post_thumbnail($loop->post->ID ); ?>
 				</a>
 			<?php } ?>
 			<?php if ( is_single() ) { ?>

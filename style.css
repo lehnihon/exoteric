@@ -42,6 +42,10 @@ td { vertical-align: top; }
     filter: alpha(opacity=60); /* For IE8 and earlier */	
 }
 
+.rosa{
+	color: #d60158;
+}
+
 body { 
 	margin: 0 auto;
 	padding: 0;
@@ -664,6 +668,10 @@ select {
 
 }
 
+#headercontainer .header-padding{
+	padding:40px 0;
+}
+
 #site-socialmedia{
 	width: 100%;
 	height: 30px;
@@ -984,6 +992,18 @@ select {
 	padding: 25px;
 }
 
+#primary .contato-enviar{
+	padding: 15px 40px;
+	background-image: none;
+	background-color: #7d1a1e;
+	color:white;
+}
+
+#primary .contato-enviar:hover{
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
 .home-products .product{
 	border:1px solid #C0C0C0;
 }
@@ -1014,7 +1034,18 @@ select {
 	background: linear-gradient(to right,  #d60258 50%,#f5f5f5 50%,#f5f5f5 50%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#000000',GradientType=1 ); /* IE6-9 */
 
+
 }
+
+#newsletter-background .newsletter-texto{
+	margin: 0;
+	margin-top: 35px;
+}
+
+#newsletter-background .newsletter-texto p{
+	margin: 0;
+}
+
 
 #newsletter-background .newsletter-nome-wrap{
 	margin: 0;
@@ -1022,6 +1053,7 @@ select {
 
 #newsletter-background .newsletter-nome{
 	padding: 15px 5px;
+	margin-top: 35px;
 }
 
 
@@ -1031,6 +1063,7 @@ select {
 
 #newsletter-background .newsletter-email{
 	padding: 15px 5px;
+	margin-top: 35px;
 }
 
 #newsletter-background .newsletter-enviar-wrap{
@@ -1040,11 +1073,25 @@ select {
 #newsletter-background .newsletter-enviar{
 	padding: 15px;
 	background-image: none;
-	background-color: #7d1a1e;
+	background-color: #d60158;
 	color:white;
+	margin-top: 35px;
 }
 
 #newsletter-background .newsletter-enviar:hover{
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+#primary .contato-enviar{
+	padding: 15px;
+	background-image: none;
+	background-color: #d60158;
+	color:white;
+	margin-top: 35px;
+}
+
+#primary .contato-enviar:hover{
     opacity: 0.6;
     filter: alpha(opacity=60); /* For IE8 and earlier */
 }
@@ -2272,16 +2319,14 @@ h1.page-title {
 	float:none;
 }
 
-.woocommerce #primary .button{
+.woocommerce #primary .single_add_to_cart_button{
 	margin-top: 10px;
-	margin-right: 10px;
-	float:left;
-	background-color: transparent;
-	background-image: url("images/botao_comprar.jpg");
-	background-repeat: no-repeat;
-	width: 127px;
-	height: 42px;
 	border: 0;
+	padding: 13px;
+	margin-right: 10px;
+	background-image: none;
+	background-color: #d60158;
+	color:white;
 }
 
 .woocommerce #primary .entre-contato{
@@ -2346,19 +2391,18 @@ h1.page-title {
 .woocommerce-page a.button.alt,
 .woocommerce-page button.button.alt,
 .woocommerce-page input.button.alt {
-	background-color: #005176;
-	*background-color: #005176;
-	background-image: -ms-linear-gradient(top, #0072a6, #005176);
-	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0072a6), to(#005176));
-	background-image: -webkit-linear-gradient(top, #0072a6, #005176);
-	background-image: -o-linear-gradient(top, #0072a6, #005176);
-	background-image: linear-gradient(top, #0072a6, #005176);
-	background-image: -moz-linear-gradient(top, #0072a6, #005176);
-	border: 1px solid #005176;
+	background-color: #d60158;
+	*background-color: #d60158;
+	background-image: -ms-linear-gradient(top, #d60158, #d60158);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#d60158), to(#d60158));
+	background-image: -webkit-linear-gradient(top, #d60158, #d60158);
+	background-image: -o-linear-gradient(top, #d60158, #d60158);
+	background-image: linear-gradient(top, #d60158, #d60158);
+	background-image: -moz-linear-gradient(top, #d60158, #d60158);
+	border: 1px solid #d60158;
 	*border: 0;
 	border-color: rgba(0, 81, 118, 0.1) rgba(0, 81, 118, 0.1) rgba(0, 81, 118, 0.25);
-	border-color: #005176 #005176 #0072a6;
-	border-bottom-color: #0072a6;
+	border-color: #d60158 #d60158 #d60158;
 	filter: progid:dximagetransform.microsoft.gradient(startColorstr='#36c1da', endColorstr='#2997ab');
 	color: #fff;
 	text-shadow: none;
@@ -2380,19 +2424,16 @@ h1.page-title {
 .woocommerce-page button.button.alt:hover,
 .woocommerce-page input.button.alt:hover {
 	color: #fff;
-	background-color: #208294;
-	*background-color: #208294;
-	background-image: -ms-linear-gradient(top, #2caec5, #208294);
-	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#2caec5), to(#208294));
-	background-image: -webkit-linear-gradient(top, #2caec5, #208294);
-	background-image: -o-linear-gradient(top, #2caec5, #208294);
-	background-image: linear-gradient(top, #2caec5, #208294);
-	background-image: -moz-linear-gradient(top, #2caec5, #208294);
-	border: 1px solid #237e8f;
+	background-color: #e24d8a;
+	*background-color: #e24d8a;
+	background-image: -ms-linear-gradient(top, #e24d8a, #e24d8a);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#e24d8a), to(#e24d8a));
+	background-image: -webkit-linear-gradient(top, #e24d8a, #e24d8a);
+	background-image: -o-linear-gradient(top, #e24d8a, #e24d8a);
+	background-image: linear-gradient(top, #e24d8a, #e24d8a);
+	background-image: -moz-linear-gradient(top, #e24d8a, #e24d8a);
+	border: 1px solid #e24d8a;
 	*border: 0;
-	border-color: rgba(35, 126, 143, 0.1) rgba(35, 126, 143, 0.1) rgba(35, 126, 143, 0.25);
-	border-color: #208294 #208294 #237e8f;
-	border-bottom-color: #237e8f;
 	filter: progid:dximagetransform.microsoft.gradient(startColorstr='#2caec5', endColorstr='#208294');
 }
 
@@ -2487,9 +2528,36 @@ h1.page-title {
 		font-size: 24px;
 		font-size: 1.5rem;
 	}
+
+	#newsletter-background .newsletter-texto{
+		margin: 0;
+		margin-top: 10px;
+	}
+	#newsletter-background .newsletter-nome{
+		padding: 15px 5px;
+		margin-top: 10px;
+	}
+
+	#newsletter-background .newsletter-email{
+		padding: 15px 5px;
+		margin-top: 10px;
+	}
+
+	#newsletter-background .newsletter-enviar{
+		padding: 15px;
+		background-image: none;
+		background-color: #d60158;
+		color:white;
+		margin-top: 10px;
+	}
+
 }
 
 @media only screen and (max-width: 980px) {
+	#headercontainer .header-padding{
+		padding:0;
+	}
+
 	.main-navigation {
 		margin: 38px 0 0 0;
 		margin: 2.375rem 0 0 0;
@@ -2506,6 +2574,10 @@ h1.page-title {
 	.main-navigation {
 		margin: 32px 0 0 0;
 		margin: 2rem 0 0 0;
+	}
+
+	#newsletter-background .newsletter-texto{
+		display: none;
 	}
 }
 
@@ -2559,6 +2631,14 @@ h1.page-title {
 		padding-left: 16px;
 		padding-left: 1rem;
 	}
+
+	#newsletter-background{
+		width: 100%;
+		background-color: #f5f5f5;
+		background: #f5f5f5;
+		background-image: none;
+	}
+
 }
 
 
@@ -2600,6 +2680,14 @@ h1.page-title {
 	.social-media-icons {
 		text-align: center;
 	}
+
+	#newsletter-background{
+		width: 100%;
+		background-color: #f5f5f5;
+		background: #f5f5f5;
+		background-image: none;
+	}
+
 }
 
 @media only screen and (max-width: 320px) {
@@ -2607,6 +2695,18 @@ h1.page-title {
 		float: left;
 		width: 100%;
 	}
+
+	#headercontainer .header-padding{
+		padding:0;
+	}
+
+	#newsletter-background{
+		width: 100%;
+		background-color: #f5f5f5;
+		background: #f5f5f5;
+		background-image: none;
+	}
+
 }
 
 

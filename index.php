@@ -29,7 +29,7 @@ get_header( 'shop' ); ?>
 			<div class="row">
 			    <?php
 
-			        $args = array( 'post_type' => 'product', 'posts_per_page' => 3, 'product_cat' => 'categoria', 'orderby' => 'rand' );
+			        $args = array( 'post_type' => 'product', 'posts_per_page' => 3, 'product_cat' => 'massagens', 'orderby' => 'rand' );
 			        $loop = new WP_Query( $args );
 
 			        while ( $loop->have_posts() ) : $loop->the_post(); global $product; 
@@ -51,7 +51,7 @@ get_header( 'shop' ); ?>
 	</div>
 	<div id="tertiary">
 		<div class="site-content">
-			<h3>Terapeutas</h3>
+			<h3>TERAPEUTAS</h3>
 			<?php
 			$args = array( 'posts_per_page' => 6, 'offset'=> 0, 'category_name' => 'terapeutas' );
 
@@ -94,7 +94,7 @@ get_header( 'shop' ); ?>
 			<div class="row">
 			    <?php
 
-			        $args = array( 'post_type' => 'product', 'posts_per_page' => 3, 'product_cat' => 'categoria', 'orderby' => 'rand' );
+			        $args = array( 'post_type' => 'product', 'posts_per_page' => 3, 'product_cat' => 'estetica', 'orderby' => 'rand' );
 			        $loop = new WP_Query( $args );
 
 			        while ( $loop->have_posts() ) : $loop->the_post(); global $product; 
@@ -120,7 +120,7 @@ get_header( 'shop' ); ?>
 			<div class="row">
 			    <?php
 
-			        $args = array( 'post_type' => 'product', 'posts_per_page' => 3, 'product_cat' => 'categoria', 'orderby' => 'rand' );
+			        $args = array( 'post_type' => 'product', 'posts_per_page' => 3, 'product_cat' => 'cursos', 'orderby' => 'rand' );
 			        $loop = new WP_Query( $args );
 
 			        while ( $loop->have_posts() ) : $loop->the_post(); global $product; 

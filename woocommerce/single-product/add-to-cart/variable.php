@@ -81,7 +81,7 @@ global $product, $post;
 				<?php woocommerce_quantity_input(); ?>
 				<span style="color:#d60158; font-weight:bold">Preço</span>
 				<div class="single_variation"></div>
-				<button type="submit" class="single_add_to_cart_button button alt"></button><a href="" class="entre-contato"></a>
+				<button type="submit" class="single_add_to_cart_button button alt">Comprar</button><a href="<?php echo esc_url( home_url( '/' ))."/contato/"; ?>" class="entre-contato"></a>
 			</div>
 
 			<input type="hidden" name="add-to-cart" value="<?php echo $product->id; ?>" />
