@@ -10,22 +10,37 @@ get_header(); ?>
 
 	<div id="primary" class="site-content row" role="main">
 
-		<div class="col grid_8_of_12">
+		<div class="col grid_12_of_12">
 
 			<?php if ( have_posts() ) : ?>
 
-				<header class="archive-header">
-					<h1 class="archive-title"><?php printf( esc_html__( 'Category Archives: %s', 'quark' ), '<span class="cat-archive">' . single_cat_title( '', false ) . '</span>' ); ?></h1>
+				<h1 class="entry-title"><?php echo single_cat_title( '', false ); ?></h1>
+				<p>Conheça as masssagistas da Clínica Massagens Exóticas.</p><br/>
 
-					<?php if ( category_description() ) { // Show an optional category description ?>
-						<div class="archive-meta"><?php echo category_description(); ?></div>
-					<?php } ?>
-				</header>
-
-				<?php // Start the Loop ?>
+				<?php $i = 0; ?>
+				
 				<?php while ( have_posts() ) : the_post(); ?>
-					<?php get_template_part( 'content', get_post_format() ); ?>
+					<?php if ( $i % 3 == 0 ) : ?>
+						<div class="row">
+					<?php endif ?>
+				    <div class="col grid_4_of_12">    
+				        <a href="<?php echo get_permalink( $loop->post->ID ) ?>" title="<?php echo esc_attr($loop->post->post_title ? $loop->post->post_title : $loop->post->ID); ?>">
+				            <?php if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID ); else echo '<img src="'.woocommerce_placeholder_img_src().'" />'; ?>	                                           
+				        </a>
+				        <h4><?php the_title(); ?></h4>
+				        <?php echo apply_filters( 'woocommerce_short_description', $post->post_excerpt ) ?>
+				        <a href="<?php echo get_permalink( $loop->post->ID ) ?>" title="<?php echo esc_attr($loop->post->post_title ? $loop->post->post_title : $loop->post->ID); ?>" class="saiba-mais">
+				        	saiba+
+				        </a>
+				    </div>
+				    <?php $i++; ?>
+					<?php if ( $i % 3 == 0 ) : ?>
+						</div>
+					<?php endif ?>
 				<?php endwhile; ?>
+				<?php if ( $i % 3 != 0 ) : ?>
+					</div>
+				<?php endif ?>
 
 				<?php quark_content_nav( 'nav-below' ); ?>
 
@@ -36,7 +51,6 @@ get_header(); ?>
 			<?php endif; // end have_posts() check ?>
 
 		</div> <!-- /.col.grid_8_of_12 -->
-		<?php get_sidebar(); ?>
 
 	</div> <!-- /#primary.site-content.row -->
 

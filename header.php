@@ -62,22 +62,32 @@
 					</h1>
 				</div> <!-- /.col.grid_5_of_12 -->
 
-				<div class="col grid_8_of_12 header-padding">
-					<nav id="site-navigation" class="main-navigation" role="navigation">
-						<h3 class="menu-toggle assistive-text"><?php esc_html_e( 'Menu', 'quark' ); ?></h3>
-						<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'quark' ); ?>"><?php esc_html_e( 'Skip to content', 'quark' ); ?></a></div>
-						<div class="nav-menu">
-							<ul>
-								<li class="page_item page-item-6"><a href="<?php echo esc_url( home_url( '/' ))."/sobre/"; ?>">SOBRE</a></li>
-								<li class="page_item page-item-7"><a href="<?php echo esc_url( home_url( '/' ))."/categoria-produto/massagens/"; ?>">MASSAGENS</a></li>
-								<li class="page_item page-item-12"><a href="<?php echo esc_url( home_url( '/' ))."/categoria-produto/cursos/"; ?>">PSICOTERAPIA</a></li>
-								<li class="page_item page-item-14"><a href="<?php echo esc_url( home_url( '/' ))."/categoria-produto/estetica/"; ?>">ESTÉTICA</a></li>
-								<li class="page_item page-item-8"><a href="<?php echo esc_url( home_url( '/' ))."/corporativo/"; ?>">CORPORATIVO</a></li>
-								<li class="page_item page-item-2"><a href="<?php echo esc_url( home_url( '/' ))."/minha-conta/"; ?>"><span class="fa fa-sign-in"></span> LOGIN</a></li>
-								<li class="page_item page-item-2"><a href="<?php echo esc_url( home_url( '/' ))."/carrinho/"; ?>"><span class="fa fa-shopping-cart"></span> CARRINHO</a></li>
-							</ul>
+				<div class="col grid_8_of_12">
+					<div class="row" style="padding:5px 0">			
+						<div class="col grid_12_of_12">
+							<div class="carrinho-login">
+							<a  href="<?php echo esc_url( home_url( '/' ))."/minha-conta/"; ?>"><span class="fa fa-sign-in"></span> Login</a> | 
+							<span class="fa fa-shopping-cart"></span> <a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php echo sprintf (_n( '%d item', '%d items', WC()->cart->cart_contents_count ), WC()->cart->cart_contents_count ); ?> </a>	
+							</div>
 						</div>
-					</nav> <!-- /.site-navigation.main-navigation -->
+					</div>
+					<div class="row">
+						<nav id="site-navigation" class="main-navigation header-padding" role="navigation">
+							<h3 class="menu-toggle assistive-text"><?php esc_html_e( 'Menu', 'quark' ); ?></h3>
+							<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'quark' ); ?>"><?php esc_html_e( 'Skip to content', 'quark' ); ?></a></div>
+							<div class="nav-menu">
+								<ul>
+									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/sobre/"; ?>">SOBRE</a></li>
+									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/categoria-produto/massagens/"; ?>">MASSAGENS</a></li>
+									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/categoria-produto/cursos/"; ?>">PSICOTERAPIA</a></li>
+									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/categoria-produto/estetica/"; ?>">ESTÉTICA</a></li>
+									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/corporativo/"; ?>">CORPORATIVO</a></li>
+									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/category/terapeutas/"; ?>">TERAPEUTAS</a></li>
+									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/contato/"; ?>">CONTATO</a></li>
+								</ul>
+							</div>
+						</nav> <!-- /.site-navigation.main-navigation -->
+					</div>
 				</div> <!-- /.col.grid_7_of_12 -->
 			</div>
 		</header> <!-- /#masthead.site-header.row -->

@@ -655,6 +655,20 @@ select {
 	color: #ffde7b;
 }
 
+#headercontainer .carrinho-login{
+	float:right;
+	color:white;	
+}
+
+#headercontainer .carrinho-login a{
+	color:white;	
+}
+
+#headercontainer .carrinho-login a:hover{
+	color:#ffde7b;	
+}
+
+
 .site-header {
 	clear: both;
 	width: 90%;
@@ -666,10 +680,6 @@ select {
 	position: relative;
 	color: #000;
 
-}
-
-#headercontainer .header-padding{
-	padding:40px 0;
 }
 
 #site-socialmedia{
@@ -971,7 +981,8 @@ select {
 	text-align: center;
 }
 
-.cart-contents{
+#masthead .cart-contents{
+	color: white;
 	text-decoration: none;
 }
 
@@ -1008,12 +1019,14 @@ select {
 	border:1px solid #C0C0C0;
 }
 
-#secondary  .saiba-mais, #tertiary .saiba-mais,#quaternary .saiba-mais,#quinary .saiba-mais{
+#primary .saiba-mais, #secondary  .saiba-mais, #tertiary .saiba-mais,#quaternary .saiba-mais,#quinary .saiba-mais{
 	color: #d60158;
 	font-style: italic;
+	display: inline-block;
+	height: 80px;
 }
 
-#secondary .saiba-mais:hover, #tertiary .saiba-mais:hover,#quaternary .saiba-mais:hover,#quinary .saiba-mais:hover{
+#primary .saiba-mais:hover, #secondary .saiba-mais:hover, #tertiary .saiba-mais:hover,#quaternary .saiba-mais:hover,#quinary .saiba-mais:hover{
 	color: #ffde7b;
 }
 
@@ -2554,14 +2567,8 @@ h1.page-title {
 }
 
 @media only screen and (max-width: 980px) {
-	#headercontainer .header-padding{
-		padding:0;
-	}
 
-	.main-navigation {
-		margin: 38px 0 0 0;
-		margin: 2.375rem 0 0 0;
-	}
+
 }
 
 @media only screen and (max-width: 900px) {
@@ -2571,10 +2578,7 @@ h1.page-title {
 	.banner h1, .banner h2, .banner p {
 		text-align: center;
 	}
-	.main-navigation {
-		margin: 32px 0 0 0;
-		margin: 2rem 0 0 0;
-	}
+
 
 	#newsletter-background .newsletter-texto{
 		display: none;
@@ -2639,6 +2643,10 @@ h1.page-title {
 		background-image: none;
 	}
 
+	#headercontainer .carrinho-login{
+		float:left;	
+	}
+
 }
 
 
@@ -2696,9 +2704,6 @@ h1.page-title {
 		width: 100%;
 	}
 
-	#headercontainer .header-padding{
-		padding:0;
-	}
 
 	#newsletter-background{
 		width: 100%;

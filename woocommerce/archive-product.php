@@ -35,21 +35,12 @@ get_header( 'shop' ); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<?php
-				/**
-				 * woocommerce_before_shop_loop hook
-				 *
-				 * @hooked woocommerce_result_count - 20
-				 * @hooked woocommerce_catalog_ordering - 30
-				 */
-				$i = 0;
-				do_action( 'woocommerce_before_shop_loop' );
-			?>
+			<?php $i = 0; ?>
 
 			<?php woocommerce_product_loop_start(); ?>
 
 				<?php woocommerce_product_subcategories(); ?>
-
+				<br/>
 				<?php while ( have_posts() ) : the_post(); ?>
 					
 					<?php wc_get_template_part( 'content', 'product' ); ?>
