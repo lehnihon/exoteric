@@ -73,13 +73,13 @@
 							<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'quark' ); ?>"><?php esc_html_e( 'Skip to content', 'quark' ); ?></a></div>
 							<div class="nav-menu">
 								<ul>
-									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/sobre/"; ?>">SOBRE</a></li>
-									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/categoria-produto/massagens/"; ?>">MASSAGENS</a></li>
-									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/categoria-produto/cursos/"; ?>">PSICOTERAPIA</a></li>
-									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/categoria-produto/estetica/"; ?>">ESTÉTICA</a></li>
+									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/contato/"; ?>">CONTATO</a></li>
 									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/corporativo/"; ?>">CORPORATIVO</a></li>
 									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/category/terapeutas/"; ?>">TERAPEUTAS</a></li>
-									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/contato/"; ?>">CONTATO</a></li>
+									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/categoria-produto/estetica/"; ?>">ESTÉTICA</a></li>
+									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/categoria-produto/cursos/"; ?>">PSICOTERAPIA</a></li>
+									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/categoria-produto/massagens/"; ?>">MASSAGENS</a></li>
+									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/sobre/"; ?>">SOBRE</a></li>
 								</ul>
 							</div>
 						</nav> <!-- /.site-navigation.main-navigation -->

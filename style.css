@@ -2235,6 +2235,10 @@ li span.dots {
 	display: block;
 }
 
+#headercontainer .main-navigation li{
+	float: right;
+}
+
 .main-navigation li.current_page_item a,
 .main-navigation li.current-menu-item a {
 }
