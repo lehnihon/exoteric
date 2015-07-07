@@ -15,10 +15,10 @@
 			<?php get_template_part( 'newsletter' ); ?>
 
 			<ul class="redes_sociais_bot">
-				<li class="youtube"><a target="_blank" href="https://www.youtube.com/channel/UCNkHrw4ujO_bUW7nmrPF1TA"></a></li>
-				<li class="instagram"><a target="_blank" href="https://instagram.com/henjioficial"></a></li>
-				<li class="twitter"><a target="_blank" href="https://twitter.com/henjioficial"></a></li>
-				<li class="facebook"><a target="_blank" href="https://www.facebook.com/henjioficial"></a></li>
+				<li class="youtube"><a target="_blank" href="#"></a></li>
+				<li class="instagram"><a target="_blank" href="#"></a></li>
+				<li class="twitter"><a target="_blank" href="#"></a></li>
+				<li class="facebook"><a target="_blank" href="#"></a></li>
 			</ul>	
 	</div> <!-- /#maincontentcontainer -->
 
@@ -27,7 +27,7 @@
 		<footer class="site-footer" role="contentinfo">
 			<div class="row">
 				<div class="col grid_4_of_12">
-					<img class="efeito-cinza" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/logo_exoteric.png"; ?>" alt="" />
+					<img class="efeito-cinza" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/logo_exoteric.png"; ?>" alt="" /><br/><br/>
 					<h5>Massagem no Centro de São Paulo</h5>
 					<p>
 						A Clinic Exoteric é uma clínica de massagem no Centro de São Paulo.<br/>
@@ -35,45 +35,92 @@
 						Também oferecemos Curso de Massagem.
 					</p>
 				</div>		
-				<div class="col grid_3_of_12">
-					<h5>Massagens</h5>
-					<ul>
-					    <?php
+				<div class="col grid_6_of_12">
+					<div class="row">
+						<div class="col grid_6_of_12">	
+							<h5>Massagens</h5>
+							<ul>
+							    <?php
 
-					        $args = array( 'post_type' => 'product', 'posts_per_page' => 8, 'product_cat' => 'massagens', 'orderby' => 'rand' );
-					        $loop = new WP_Query( $args );
+							        $args = array( 'post_type' => 'product', 'posts_per_page' => 5, 'product_cat' => 'massagens', 'orderby' => 'rand' );
+							        $loop = new WP_Query( $args );
 
-					        while ( $loop->have_posts() ) : $loop->the_post(); global $product; 
-					    ?>
-			                <li>   
-			                    <a href="<?php echo get_permalink( $loop->post->ID ) ?>" title="<?php echo esc_attr($loop->post->post_title ? $loop->post->post_title : $loop->post->ID); ?>">
-			                        <?php the_title(); ?>                                    
-			                    </a>
-			                  
-			                </li>
-					    <?php endwhile; ?>
-					    <?php wp_reset_query(); ?>
-					</ul>
-				</div>
-				<div class="col grid_3_of_12">
-					<h5>Cursos</h5>
-					<ul>
-					    <?php
+							        while ( $loop->have_posts() ) : $loop->the_post(); global $product; 
+							    ?>
+					                <li>   
+					                    <a href="<?php echo get_permalink( $loop->post->ID ) ?>" title="<?php echo esc_attr($loop->post->post_title ? $loop->post->post_title : $loop->post->ID); ?>">
+					                        <?php the_title(); ?>                                    
+					                    </a>
+					                  
+					                </li>
+							    <?php endwhile; ?>
+							    <?php wp_reset_query(); ?>
+							</ul>
+						</div>
+						<div class="col grid_6_of_12">	
+							<h5>Cursos</h5>
+							<ul>
+							    <?php
 
-					        $args = array( 'post_type' => 'product', 'posts_per_page' => 8, 'product_cat' => 'cursos', 'orderby' => 'rand' );
-					        $loop = new WP_Query( $args );
+							        $args = array( 'post_type' => 'product', 'posts_per_page' => 5, 'product_cat' => 'cursos', 'orderby' => 'rand' );
+							        $loop = new WP_Query( $args );
 
-					        while ( $loop->have_posts() ) : $loop->the_post(); global $product; 
-					    ?>
-			                <li>   
-			                    <a href="<?php echo get_permalink( $loop->post->ID ) ?>" title="<?php echo esc_attr($loop->post->post_title ? $loop->post->post_title : $loop->post->ID); ?>">
-			                        <?php the_title(); ?>                                    
-			                    </a>
-			                  
-			                </li>
-					    <?php endwhile; ?>
-					    <?php wp_reset_query(); ?>
-					</ul>
+							        while ( $loop->have_posts() ) : $loop->the_post(); global $product; 
+							    ?>
+					                <li>   
+					                    <a href="<?php echo get_permalink( $loop->post->ID ) ?>" title="<?php echo esc_attr($loop->post->post_title ? $loop->post->post_title : $loop->post->ID); ?>">
+					                        <?php the_title(); ?>                                    
+					                    </a>
+					                  
+					                </li>
+							    <?php endwhile; ?>
+							    <?php wp_reset_query(); ?>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col grid_6_of_12">	
+							<h5>Psicoterapia</h5>
+							<ul>
+							    <?php
+
+							        $args = array( 'post_type' => 'product', 'posts_per_page' => 5, 'product_cat' => 'psicoterapia', 'orderby' => 'rand' );
+							        $loop = new WP_Query( $args );
+
+							        while ( $loop->have_posts() ) : $loop->the_post(); global $product; 
+							    ?>
+					                <li>   
+					                    <a href="<?php echo get_permalink( $loop->post->ID ) ?>" title="<?php echo esc_attr($loop->post->post_title ? $loop->post->post_title : $loop->post->ID); ?>">
+					                        <?php the_title(); ?>                                    
+					                    </a>
+					                  
+					                </li>
+							    <?php endwhile; ?>
+							    <?php wp_reset_query(); ?>
+							</ul>
+						</div>
+						<div class="col grid_6_of_12">	
+							<h5>Estética</h5>
+							<ul>
+							    <?php
+
+							        $args = array( 'post_type' => 'product', 'posts_per_page' => 5, 'product_cat' => 'estetica', 'orderby' => 'rand' );
+							        $loop = new WP_Query( $args );
+
+							        while ( $loop->have_posts() ) : $loop->the_post(); global $product; 
+							    ?>
+					                <li>   
+					                    <a href="<?php echo get_permalink( $loop->post->ID ) ?>" title="<?php echo esc_attr($loop->post->post_title ? $loop->post->post_title : $loop->post->ID); ?>">
+					                        <?php the_title(); ?>                                    
+					                    </a>
+					                  
+					                </li>
+							    <?php endwhile; ?>
+							    <?php wp_reset_query(); ?>
+							</ul>
+						</div>
+					</div>
+
 				</div>
 				<div class="col grid_2_of_12">
 					<h5>Atendimento</h5>
@@ -87,53 +134,6 @@
 		                <li><a>11 3203-1478</a></li>
 		                <li><a>11 98937-2110</a></li>	           
 					</ul>
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col grid_4_of_12"><br/>
-				</div>		
-				<div class="col grid_3_of_12">
-					<h5>Psicoterapia</h5>
-					<ul>
-					    <?php
-
-					        $args = array( 'post_type' => 'product', 'posts_per_page' => 8, 'product_cat' => 'psicoterapia', 'orderby' => 'rand' );
-					        $loop = new WP_Query( $args );
-
-					        while ( $loop->have_posts() ) : $loop->the_post(); global $product; 
-					    ?>
-			                <li>   
-			                    <a href="<?php echo get_permalink( $loop->post->ID ) ?>" title="<?php echo esc_attr($loop->post->post_title ? $loop->post->post_title : $loop->post->ID); ?>">
-			                        <?php the_title(); ?>                                    
-			                    </a>
-			                  
-			                </li>
-					    <?php endwhile; ?>
-					    <?php wp_reset_query(); ?>
-					</ul>
-				</div>
-				<div class="col grid_3_of_12">
-					<h5>Estética</h5>
-					<ul>
-					    <?php
-
-					        $args = array( 'post_type' => 'product', 'posts_per_page' => 8, 'product_cat' => 'estetica', 'orderby' => 'rand' );
-					        $loop = new WP_Query( $args );
-
-					        while ( $loop->have_posts() ) : $loop->the_post(); global $product; 
-					    ?>
-			                <li>   
-			                    <a href="<?php echo get_permalink( $loop->post->ID ) ?>" title="<?php echo esc_attr($loop->post->post_title ? $loop->post->post_title : $loop->post->ID); ?>">
-			                        <?php the_title(); ?>                                    
-			                    </a>
-			                  
-			                </li>
-					    <?php endwhile; ?>
-					    <?php wp_reset_query(); ?>
-					</ul>
-				</div>
-				<div class="col grid_2_of_12"><br/>
 				</div>
 			</div>
 
@@ -151,7 +151,7 @@
 	</div>
 	<div id="copyrightcontainer">
 		<p>
-			© Copyright 2015 - Haishop
+			<strong>© Copyright 2015 - Clínica Massagens Exóticas</strong>
 		</p>
 	</div>
 </div> <!-- /.#wrapper.hfeed.site -->
