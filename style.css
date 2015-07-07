@@ -655,19 +655,26 @@ select {
 	color: #ffde7b;
 }
 
-#headercontainer .carrinho-login{
+#wrapper .carrinho-login{
 	float:right;
-	color:white;	
+	color:#d60158;	
+	width: 140px;
+	margin-top: 3px;
+	margin-bottom: 5px;
+	height: 22px;
 }
 
-#headercontainer .carrinho-login a{
-	color:white;	
+#wrapper .carrinho-login a{
+	color:#d60158;	
 }
 
-#headercontainer .carrinho-login a:hover{
+#wrapper .carrinho-login a:hover{
 	color:#ffde7b;	
 }
 
+#headercontainer .header-padding{
+	padding-top: 35px;
+}
 
 .site-header {
 	clear: both;
@@ -692,9 +699,9 @@ select {
 	margin-bottom: 5px;
 	height: 22px;
 	text-align: left;
-	clear: right;
 	list-style:none;
 	float:right;
+	padding-left: 10px;
 }
 
 .redes_sociais_header li:hover{
@@ -2564,6 +2571,10 @@ h1.page-title {
 		margin-top: 10px;
 	}
 
+	#headercontainer .header-padding{
+		padding-top: 25px;
+	}
+
 }
 
 @media only screen and (max-width: 980px) {
@@ -2641,10 +2652,6 @@ h1.page-title {
 		background-color: #f5f5f5;
 		background: #f5f5f5;
 		background-image: none;
-	}
-
-	#headercontainer .carrinho-login{
-		float:left;	
 	}
 
 }

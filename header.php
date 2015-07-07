@@ -48,6 +48,10 @@
 					<li class="twitter"><a target="_blank" href="#"></a></li>
 					<li class="facebook"><a target="_blank" href="#"></a></li>
 				</ul>
+				<div class="carrinho-login">
+					<span class="fa fa-sign-in"></span><a href="<?php echo esc_url( home_url( '/' ))."/minha-conta/"; ?>"> Login</a> | 
+					<span class="fa fa-shopping-cart"></span> <a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php echo sprintf (_n( '%d item', '%d items', WC()->cart->cart_contents_count ), WC()->cart->cart_contents_count ); ?> </a>	
+				</div>
 			</div>
 		</div>
 	</div>
@@ -63,14 +67,6 @@
 				</div> <!-- /.col.grid_5_of_12 -->
 
 				<div class="col grid_8_of_12">
-					<div class="row" style="padding:5px 0">			
-						<div class="col grid_12_of_12">
-							<div class="carrinho-login">
-							<a  href="<?php echo esc_url( home_url( '/' ))."/minha-conta/"; ?>"><span class="fa fa-sign-in"></span> Login</a> | 
-							<span class="fa fa-shopping-cart"></span> <a class="cart-contents" href="<?php echo WC()->cart->get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php echo sprintf (_n( '%d item', '%d items', WC()->cart->cart_contents_count ), WC()->cart->cart_contents_count ); ?> </a>	
-							</div>
-						</div>
-					</div>
 					<div class="row">
 						<nav id="site-navigation" class="main-navigation header-padding" role="navigation">
 							<h3 class="menu-toggle assistive-text"><?php esc_html_e( 'Menu', 'quark' ); ?></h3>
