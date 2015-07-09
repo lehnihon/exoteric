@@ -18,7 +18,7 @@ get_header( 'shop' ); ?>
 		<div id="bannercontainer" class="row">
 			<div class="col grid_12_of_12 efeito-cinza">
 				<?php 
-				    echo do_shortcode("[metaslider id=28]"); 
+				    echo do_shortcode("[metaslider id=106]"); 
 				?>	
 			</div>			
 		</div> <!-- /#bannercontainer -->
