@@ -2035,6 +2035,15 @@ form label.error {
 	display: none;
 }
 
+#tab-description p{
+	margin: 0;
+}
+
+#tab-description h4{
+	margin: 13px;
+	margin-left: 0;
+}
+
 .paged #nav-above {
 	display: block;
 }

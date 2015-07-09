@@ -77,7 +77,8 @@
 									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/corporativo/"; ?>">CORPORATIVO</a></li>
 									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/category/terapeutas/"; ?>">TERAPEUTAS</a></li>
 									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/categoria-produto/estetica/"; ?>">ESTÉTICA</a></li>
-									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/categoria-produto/cursos/"; ?>">PSICOTERAPIA</a></li>
+									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/categoria-produto/cursos/"; ?>">CURSOS</a></li>
+									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/categoria-produto/psicoterapia/"; ?>">PSICOTERAPIA</a></li>
 									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/categoria-produto/massagens/"; ?>">MASSAGENS</a></li>
 									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/sobre/"; ?>">SOBRE</a></li>
 								</ul>

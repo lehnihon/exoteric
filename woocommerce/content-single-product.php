@@ -111,7 +111,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<?php endif;
 			wp_reset_postdata();?>
 		</div>	
-	</div>
+	</div></br>
 
 
 
