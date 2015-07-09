@@ -98,7 +98,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 					<?php while ( $products->have_posts() ) : $products->the_post(); ?>
 						<div class="row">
-					        <a href="<?php echo get_permalink( $loop->post->ID ) ?>" title="<?php echo esc_attr($loop->post->post_title ? $loop->post->post_title : $loop->post->ID); ?>" class="saiba-mais">
+					        <a href="<?php echo get_permalink( $loop->post->ID ) ?>" title="<?php echo esc_attr($loop->post->post_title ? $loop->post->post_title : $loop->post->ID); ?>">
 					        	<?php the_title(); ?>
 					        </a>
 				    	</div>

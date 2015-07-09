@@ -42,7 +42,7 @@ if ( ! $product->is_purchasable() ) {
 	 			) );
 	 	?>
 	 	<input type="hidden" name="add-to-cart" value="<?php echo esc_attr( $product->id ); ?>" />
-	 	<button type="submit" class="single_add_to_cart_button button alt">Comprar</button><a href="<?php echo esc_url( home_url( '/' ))."/contato/"; ?>" class="entre-contato"></a>
+	 	<button type="submit" class="efeito-claro single_add_to_cart_button button alt">Comprar</button><a href="<?php echo esc_url( home_url( '/' ))."/contato/"; ?>" class="efeito-claro entre-contato"></a>
 
 		<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
 	</form>
