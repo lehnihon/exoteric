@@ -28,7 +28,7 @@ get_header(); ?>
 				<?php endwhile; // end of the loop. ?>
 
 			</div> <!-- /.col.grid_8_of_12 -->
-		<div class="col grid_4_of_12 sidebar-background">
+		<div class="col grid_3_of_12 sidebar-background">
 
 			<div role="complementary">
 				<h4 class="sidebar-title">Terapeutas</h4>
