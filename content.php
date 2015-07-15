@@ -19,6 +19,7 @@
 				'link_before' => '<span class="page-numbers">',
 				'link_after' => '</span>'
 			) ); ?>
+			<span style="font-size:14px">clique para ampliar</span>
 		</div> <!-- /.entry-content -->
 
 		<footer class="entry-meta">

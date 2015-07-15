@@ -33,7 +33,7 @@ get_header(); ?>
 			<div role="complementary">
 				<h4 class="sidebar-title">Terapeutas</h4>
 				<?php
-				$args = array( 'posts_per_page' => 6, 'offset'=> 0, 'category_name' => 'terapeutas' );
+				$args = array(  'offset'=> 0, 'category_name' => 'terapeutas' );
 
 				$myposts = get_posts( $args );
 				$i = 0;
