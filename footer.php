@@ -30,7 +30,7 @@
 					<img class="efeito-cinza" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/logo_exoteric.png"; ?>" alt="" /><br/><br/>
 					<h5>Massagem no Centro de São Paulo</h5>
 					<p>
-						A Clinic Exoteric é uma clínica de massagem no Centro de São Paulo.<br/>
+						A Clínica de Massagens Exóticas é uma clínica de massagem no Centro de São Paulo.<br/>
 						Somos especializados em massagens terapêuticas, tântricas, Mix Massagem, Shiatsu, Quick Massagem, Acumputura e todos os tipos de massagem.<br/>
 						Também oferecemos Curso de Massagem.
 					</p>
@@ -42,7 +42,7 @@
 							<ul>
 							    <?php
 
-							        $args = array( 'post_type' => 'product', 'posts_per_page' => 5, 'product_cat' => 'massagens', 'orderby' => 'rand' );
+							        $args = array( 'post_type' => 'product', 'product_cat' => 'massagens', 'orderby' => 'rand' );
 							        $loop = new WP_Query( $args );
 
 							        while ( $loop->have_posts() ) : $loop->the_post(); global $product; 
@@ -62,7 +62,7 @@
 							<ul>
 							    <?php
 
-							        $args = array( 'post_type' => 'product', 'posts_per_page' => 5, 'product_cat' => 'cursos', 'orderby' => 'rand' );
+							        $args = array( 'post_type' => 'product',  'product_cat' => 'cursos', 'orderby' => 'rand' );
 							        $loop = new WP_Query( $args );
 
 							        while ( $loop->have_posts() ) : $loop->the_post(); global $product; 
@@ -84,7 +84,7 @@
 							<ul>
 							    <?php
 
-							        $args = array( 'post_type' => 'product', 'posts_per_page' => 5, 'product_cat' => 'psicoterapia', 'orderby' => 'rand' );
+							        $args = array( 'post_type' => 'product',  'product_cat' => 'psicoterapia', 'orderby' => 'rand' );
 							        $loop = new WP_Query( $args );
 
 							        while ( $loop->have_posts() ) : $loop->the_post(); global $product; 
@@ -104,7 +104,7 @@
 							<ul>
 							    <?php
 
-							        $args = array( 'post_type' => 'product', 'posts_per_page' => 5, 'product_cat' => 'estetica', 'orderby' => 'rand' );
+							        $args = array( 'post_type' => 'product',  'product_cat' => 'estetica', 'orderby' => 'rand' );
 							        $loop = new WP_Query( $args );
 
 							        while ( $loop->have_posts() ) : $loop->the_post(); global $product; 
@@ -126,10 +126,10 @@
 					<h5>Atendimento</h5>
 					<ul> 
 		                <li>   
-		                    <a href="#">Localização</a>
+		                    <a href="<?php echo esc_url( home_url( '/' ))."/localizacao/"; ?>">Localização</a>
 		                </li>
 		                <li>   
-		                    <a href="#">Contato</a>
+		                    <a href="<?php echo esc_url( home_url( '/' ))."/sobre/"; ?>">Contato</a>
 		                </li>
 		                <li><a>11 3203-1478</a></li>
 		                <li><a>11 98937-2110</a></li>	           

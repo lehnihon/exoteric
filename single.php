@@ -28,12 +28,12 @@ get_header(); ?>
 				<?php endwhile; // end of the loop. ?>
 
 			</div> <!-- /.col.grid_8_of_12 -->
-		<div class="col grid_4_of_12 sidebar-background">
+		<div class="col grid_3_of_12 sidebar-background">
 
 			<div role="complementary">
 				<h4 class="sidebar-title">Terapeutas</h4>
 				<?php
-				$args = array( 'posts_per_page' => 6, 'offset'=> 0, 'category_name' => 'terapeutas' );
+				$args = array(  'offset'=> 0, 'category_name' => 'terapeutas' );
 
 				$myposts = get_posts( $args );
 				$i = 0;

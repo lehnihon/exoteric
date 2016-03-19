@@ -53,7 +53,7 @@ get_header( 'shop' ); ?>
 		<div class="site-content">
 			<h3>TERAPEUTAS</h3>
 			<?php
-			$args = array( 'posts_per_page' => 6, 'offset'=> 0, 'category_name' => 'terapeutas' );
+			$args = array( 'posts_per_page' => 6, 'offset'=> 0, 'category_name' => 'terapeutas','orderby' => 'rand'  );
 
 			$myposts = get_posts( $args );
 			$i = 0;
