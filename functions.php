@@ -116,6 +116,24 @@ if ( ! function_exists( 'quark_setup' ) ) {
 add_action( 'after_setup_theme', 'quark_setup' );
 
 
+function my_post_queries( $query ) {
+  // do not alter the query on wp-admin pages and only alter it if it's the main query
+  if (!is_admin() && $query->is_main_query()){
+
+    // alter the query for the home and category pages 
+
+    if(is_home()){
+      $query->set('posts_per_page', 12);
+    }
+
+    if(is_category()){
+      $query->set('posts_per_page', 12 );
+    }
+
+  }
+}
+add_action( 'pre_get_posts', 'my_post_queries' );
+
 /**
  * Enable backwards compatability for title-tag support
  *
