@@ -2,6 +2,7 @@
  * Handles the client side Comments form validation.
  */
 jQuery( document ).ready( function( $ ) {
+
 	if( comments_object.req ) {
 
 		$( "#commentform" ).validate( {

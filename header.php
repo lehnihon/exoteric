@@ -83,6 +83,20 @@
 									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/sobre/"; ?>">SOBRE</a></li>
 								</ul>
 							</div>
+							<div class="menu-responsivo">
+								<a class="menu-drop-header" href="#">Menu</a>
+								
+								<ul class="menu-drop">	
+									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/sobre/"; ?>">SOBRE</a></li>
+									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/categoria-produto/massagens/"; ?>">MASSAGENS</a></li>
+									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/categoria-produto/psicoterapia/"; ?>">PSICOTERAPIA</a></li>
+									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/categoria-produto/cursos/"; ?>">CURSOS</a></li>
+									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/categoria-produto/estetica/"; ?>">ESTÉTICA</a></li>
+									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/category/terapeutas/"; ?>">TERAPEUTAS</a></li>
+									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/corporativo/"; ?>">CORPORATIVO</a></li>
+									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/contato/"; ?>">CONTATO</a></li>
+								</ul>								
+							</div>								
 						</nav> <!-- /.site-navigation.main-navigation -->
 					</div>
 				</div> <!-- /.col.grid_7_of_12 -->

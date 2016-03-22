@@ -155,8 +155,23 @@
 		</p>
 	</div>
 </div> <!-- /.#wrapper.hfeed.site -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script>
 
+$(function() {
+    $('.menu-drop-header').on('click',function(e){
+        e.preventDefault();
+        if ( $(this).next('.menu-drop').is( ":hidden" ) ) {         
+            $(this).next('.menu-drop').slideDown( "slow" );
+        }else{
+            $(this).next('.menu-drop').slideUp( "slow" );
+        }
+    });
+});
+
+</script>
 <?php wp_footer(); ?>
+
 </body>
 
 </html>

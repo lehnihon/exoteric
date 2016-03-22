@@ -2543,6 +2543,31 @@ h1.page-title {
 	text-decoration: none;
 }
 
+ul.menu-drop{
+    position:absolute;
+    padding:10px 20px;
+    margin: 0;
+    z-index: 1030;
+    display: none;
+    background-color: #C0C1C3;
+}
+
+ul.menu-drop li{
+    list-style-type: none;
+    background-color: #C0C1C3 !important;
+    text-align: left; 
+    margin: 5px 0;
+    display: block;
+}
+
+ul.menu-drop li a{
+    background-color: #C0C1C3;
+}
+
+div.menu-responsivo{
+    display: none;
+}
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
@@ -2591,7 +2616,19 @@ h1.page-title {
 }
 
 @media only screen and (max-width: 980px) {
+    div.menu-responsivo{
+        width: 50px;
+        text-align: left;
+        display: block;
+        padding: 10px;
+    }
+	ul.menu-drop{
+	    display: none;
+	}
 
+    div.nav-menu{
+        display: none;
+    }	
 
 }
 
