@@ -191,7 +191,7 @@ get_header(); ?>
 					?>
 
 					<?php 
-					$args = array( 'posts_per_page' => 1,  'category_name' => 'terapeutas','name' => 'terapeuta-cristina-digiorgi'  );
+					$args = array( 'posts_per_page' => 1,  'category_name' => 'terapeutas','name' => 'terapeuta-marcos'  );
 					$myposts = get_posts( $args );
 					foreach ( $myposts as $post ) : setup_postdata( $post );
 					?>
@@ -218,27 +218,6 @@ get_header(); ?>
 					$myposts = get_posts( $args );
 					foreach ( $myposts as $post ) : setup_postdata( $post );
 					?>	
-					<div class="col grid_4_of_12">
-						<?php if ( has_post_thumbnail()) : ?>
-							<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
-								<?php the_post_thumbnail(); ?>
-							</a>
-						<?php endif; ?>
-						<h4><?php the_title();?></h4>
-	                    <a href="<?php the_permalink(); ?>" class="saiba-mais">
-	                    	saiba+
-	                    </a>
-	            	</div>
-					<?php 
-					endforeach; 
-					wp_reset_postdata();
-					?>
-
-					<?php 
-					$args = array( 'posts_per_page' => 1,  'category_name' => 'terapeutas','name' => 'terapeuta-marcos'  );
-					$myposts = get_posts( $args );
-					foreach ( $myposts as $post ) : setup_postdata( $post );
-					?>
 					<div class="col grid_4_of_12">
 						<?php if ( has_post_thumbnail()) : ?>
 							<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" >
