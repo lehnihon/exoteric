@@ -58,7 +58,7 @@
 	<div id="headercontainer">
 		<header id="masthead" class="site-header" role="banner">
 			<div class="row">
-				<div class="col grid_4_of_12" style="padding:5px 0">
+				<div class="col grid_3_of_12" style="padding:5px 0">
 					<h1 style="margin:0">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" rel="home">
 							<img class="efeito-cinza" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/logo_exoteric.png"; ?>" alt="" />
@@ -66,7 +66,7 @@
 					</h1>
 				</div> <!-- /.col.grid_5_of_12 -->
 
-				<div class="col grid_8_of_12">
+				<div class="col grid_9_of_12">
 					<div class="row">
 						<nav id="site-navigation" class="main-navigation header-padding" role="navigation">
 							<h3 class="menu-toggle assistive-text"><?php esc_html_e( 'Menu', 'quark' ); ?></h3>
@@ -78,6 +78,9 @@
 									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/category/terapeutas/"; ?>">TERAPEUTAS</a></li>
 									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/categoria-produto/estetica/"; ?>">ESTÉTICA</a></li>
 									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/categoria-produto/cursos/"; ?>">CURSOS</a></li>
+									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/categoria-produto/ofuro/"; ?>">OFURÔ</a></li>
+									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/categoria-produto/quiropraxia/"; ?>">QUIROPRAXIA</a></li>
+									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/categoria-produto/yoga/"; ?>">YOGA</a></li>
 									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/categoria-produto/psicoterapia/"; ?>">PSICOTERAPIA</a></li>
 									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/categoria-produto/massagens/"; ?>">MASSAGENS</a></li>
 									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/sobre/"; ?>">SOBRE</a></li>
@@ -90,6 +93,9 @@
 									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/sobre/"; ?>">SOBRE</a></li>
 									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/categoria-produto/massagens/"; ?>">MASSAGENS</a></li>
 									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/categoria-produto/psicoterapia/"; ?>">PSICOTERAPIA</a></li>
+									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/categoria-produto/ofuro/"; ?>">OFURÔ</a></li>
+									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/categoria-produto/quiropraxia/"; ?>">QUIROPRAXIA</a></li>
+									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/categoria-produto/yoga/"; ?>">YOGA</a></li>
 									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/categoria-produto/cursos/"; ?>">CURSOS</a></li>
 									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/categoria-produto/estetica/"; ?>">ESTÉTICA</a></li>
 									<li class="page_item"><a href="<?php echo esc_url( home_url( '/' ))."/category/terapeutas/"; ?>">TERAPEUTAS</a></li>

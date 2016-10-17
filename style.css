@@ -2158,8 +2158,8 @@ li span.dots {
 .main-navigation li {
 	float: left;
 	position: relative;
-	margin: 0 0 0 20px; /* Margin on the left side of each top level menu item (since it's floated right) */
-	margin: 0 0 0 1.25rem;
+	margin: 0 0 0 10px; /* Margin on the left side of each top level menu item (since it's floated right) */
+	margin: 0 0 0 0.5rem;
 }
 
 .main-navigation ul ul li {
